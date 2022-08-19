@@ -28,8 +28,9 @@ such that actions with higher values are more likely to be selected, but not in 
 To implement them, we added a memory variable, e(a_i,s_t), associated with each action-state pair. Let λ be a decay parameter, controlling how much previous actions are affected by the current RPE, and γ the discount factor previously mentioned. Then, at each time step, if an action is performed, its eligibility trace increased to 1 and the eligibility trace of the other action decayed by a factor of γλ. That is:
 
 $e(a_i,s_t )= γλe(a_i,s_t)$  if $a_i$ was not perfomed
+
             = $1 $           if $a_i$ was performed     
-                  
+
 If λ=1, all previously performed actions are remembered perfectly and all are given credit for the reward. If λ=0, then only the most recently performed action is given credit, and it is the only one affected by the RPE. 
 The addition of the memory variable e(a_i,s_t) makes the update of the action preferences in the following way:
 
