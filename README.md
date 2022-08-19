@@ -36,4 +36,4 @@ We ran two groups of simulations to reproduce the structure of sequence learning
 
 ## Using the code
 
-The scripts are divided into the two simulations performed for the control group and the experimental group, and they allow the user to replicate the the figures in Favila, Gurney & Overton (__in revision__).
+The scripts are written in Matlab and are divided into the two simulations performed for the control group and the experimental group, and they allow the user to replicate the the figures in Favila, Gurney & Overton (__in revision__).
